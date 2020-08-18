@@ -16,7 +16,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <DFPSlotsProvider dfpNetworkId="12234093">
-      <AdSlot adUnit="/DP.com-Leaderboard" sizes={[[728, 90], [728, 90]]} />
+      <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
     </DFPSlotsProvider>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
