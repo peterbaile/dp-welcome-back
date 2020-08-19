@@ -5,7 +5,7 @@ import s from 'styled-components'
 import SEO from "../components/seo"
 import NavBar from '../components/Nav'
 import WordWithLine from '../components/WordWithLine'
-import UTB from '../components/PicWithLine'
+import UTB from '../components/UTB'
 import Street from '../components/34st'
 
 import { ROBOTO_REGULAR } from '../utils/font'
