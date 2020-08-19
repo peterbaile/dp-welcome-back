@@ -1,26 +1,36 @@
-import React from "react"
-import { Link } from "gatsby"
-import { DFPSlotsProvider, AdSlot } from 'react-dfp'
+import React from 'react'
+import { DFPSlotsProvider, AdSlot, DFPManager } from 'react-dfp'
 
-import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import NavBar from '../components/Nav'
+import WordWithLine from '../components/WordWithLine'
+import PicWithLine from '../components/PicWithLine'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <DFPSlotsProvider dfpNetworkId="12234093">
-      <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
-    </DFPSlotsProvider>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <>
+      <SEO title="Home" />
+
+      <NavBar />
+      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </div> */}
+
+      <WordWithLine word="NEWS" />
+
+      <WordWithLine word="OPINION" />
+
+      <WordWithLine word="SPORTS" />
+
+      <PicWithLine img="utb-logo-with-text.png" />
+
+      
+      {/* <DFPSlotsProvider dfpNetworkId="12234093">
+        <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
+      </DFPSlotsProvider> */}
+    </>
+  )
+}
 
 export default IndexPage

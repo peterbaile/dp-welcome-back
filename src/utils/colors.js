@@ -1,0 +1,1 @@
+export const UTB_BLUE = '#456CB3'
