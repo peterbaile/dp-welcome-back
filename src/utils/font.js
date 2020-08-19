@@ -71,3 +71,8 @@ export const KARLA_BOLD_ITALIC = `
   font-weight: 700;
   font-style: italic;
 `
+
+export const FJALLA_REGULAR = `
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+`
