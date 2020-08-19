@@ -1,5 +1,5 @@
 import React from 'react'
-import { DFPSlotsProvider, AdSlot, DFPManager } from 'react-dfp'
+import { DFPSlotsProvider, AdSlot } from 'react-dfp'
 import s from 'styled-components'
 
 import SEO from "../components/seo"
@@ -29,6 +29,10 @@ const IndexPage = () => {
 
       <WordWithLine word="NEWS" />
 
+      <DFPSlotsProvider dfpNetworkId="12234093">
+        <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
+      </DFPSlotsProvider>
+
       <WordWithLine word="OPINION" />
 
       <Street />
@@ -37,12 +41,7 @@ const IndexPage = () => {
 
       <UTB />
 
-      <Credit> Made with <span role="img"> 😷</span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
-
-      
-      {/* <DFPSlotsProvider dfpNetworkId="12234093">
-        <AdSlot adUnit="DP.com-Leaderboard" sizes={[[728, 90]]} />
-      </DFPSlotsProvider> */}
+      <Credit> Made with <span role="img"> 🎒</span> by The Daily Pennsylvanian © 2020. All rights reserved.  </Credit>
     </>
   )
 }
